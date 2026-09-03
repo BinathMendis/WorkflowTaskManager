@@ -1,0 +1,15 @@
+C:\1000_TALKS\TaskManagementSystem\TaskManagementSystem.Application\bin\Debug\net8.0\TaskManagementSystem.Application.deps.json
+C:\1000_TALKS\TaskManagementSystem\TaskManagementSystem.Application\bin\Debug\net8.0\TaskManagementSystem.Application.dll
+C:\1000_TALKS\TaskManagementSystem\TaskManagementSystem.Application\bin\Debug\net8.0\TaskManagementSystem.Application.pdb
+C:\1000_TALKS\TaskManagementSystem\TaskManagementSystem.Application\bin\Debug\net8.0\TaskManagementSystem.Domain.dll
+C:\1000_TALKS\TaskManagementSystem\TaskManagementSystem.Application\bin\Debug\net8.0\TaskManagementSystem.Domain.pdb
+C:\1000_TALKS\TaskManagementSystem\TaskManagementSystem.Application\obj\Debug\net8.0\TaskManagementSystem.Application.csproj.AssemblyReference.cache
+C:\1000_TALKS\TaskManagementSystem\TaskManagementSystem.Application\obj\Debug\net8.0\TaskManagementSystem.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\1000_TALKS\TaskManagementSystem\TaskManagementSystem.Application\obj\Debug\net8.0\TaskManagementSystem.Application.AssemblyInfoInputs.cache
+C:\1000_TALKS\TaskManagementSystem\TaskManagementSystem.Application\obj\Debug\net8.0\TaskManagementSystem.Application.AssemblyInfo.cs
+C:\1000_TALKS\TaskManagementSystem\TaskManagementSystem.Application\obj\Debug\net8.0\TaskManagementSystem.Application.csproj.CoreCompileInputs.cache
+C:\1000_TALKS\TaskManagementSystem\TaskManagementSystem.Application\obj\Debug\net8.0\TaskMana.0F84D606.Up2Date
+C:\1000_TALKS\TaskManagementSystem\TaskManagementSystem.Application\obj\Debug\net8.0\TaskManagementSystem.Application.dll
+C:\1000_TALKS\TaskManagementSystem\TaskManagementSystem.Application\obj\Debug\net8.0\refint\TaskManagementSystem.Application.dll
+C:\1000_TALKS\TaskManagementSystem\TaskManagementSystem.Application\obj\Debug\net8.0\TaskManagementSystem.Application.pdb
+C:\1000_TALKS\TaskManagementSystem\TaskManagementSystem.Application\obj\Debug\net8.0\ref\TaskManagementSystem.Application.dll

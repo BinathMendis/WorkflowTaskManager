@@ -1,0 +1,64 @@
+# In Package Manager Console
+
+# OR via command:
+PM> Remove-Migration -Context ApplicationDbContext -StartupProject TaskManagementSystem.API -Force
+
+# 1. Make sure Default project is set to TaskManagementSystem.Infrastructure
+# 2. Ensure API is set as Startup Project
+
+# Create new migration
+PM> Add-Migration InitialCreate -Context ApplicationDbContext -OutputDir Migrations -StartupProject TaskManagementSystem.API
+
+# Apply to new database
+PM> Update-Database -Context ApplicationDbContext -StartupProject TaskManagementSystem.API
+
+
+
+To update existing database with new columns:
+powershell
+# After adding properties to entities
+Add-Migration AddedNewColumns -Context ApplicationDbContext -OutputDir Migrations -StartupProject TaskManagementSystem.API
+Update-Database -Context ApplicationDbContext -StartupProject TaskManagementSystem.API
+
+
+
+# Clean and rebuild
+dotnet clean
+dotnet build
+
+# Remove old migrations if any
+Remove-Migration -Context ApplicationDbContext -StartupProject TaskManagementSystem.API -Force
+
+# Create fresh migration
+Add-Migration emailconfiguration -Context ApplicationDbContext -OutputDir Migrations -StartupProject TaskManagementSystem.API
+
+# Update database
+Update-Database -Context ApplicationDbContext -StartupProject TaskManagementSystem.API
+
+┌─────────────────────────────────────────────────────────────────┐
+│                    EMAIL FLOW DIAGRAM                            │
+└─────────────────────────────────────────────────────────────────┘
+
+1. Admin creates task
+   Admin (John) ──→ Task Created ──→ Email to assigned user ONLY
+                                      └── Sarah receives email
+
+2. User accepts task  
+   User (Sarah) ──→ Task Accepted ──→ Email to task creator ONLY
+                                      └── John receives email
+
+3. User rejects task
+   User (Sarah) ──→ Task Rejected ──→ Email to task creator (with reason)
+                                      └── John receives email + reason
+
+4. User completes task
+   User (Sarah) ──→ Task Completed ──→ Email to ALL admins
+                                      └── John, Mary, David receive email
+
+5. Due date reminder (daily)
+   System ──→ Due Tomorrow ──→ Email to assigned user ONLY
+                              └── Each assigned user gets reminder
+
+6. Overdue notification (daily)
+   System ──→ Task Overdue ──→ Email to assigned user + ALL admins
+                              └── Sarah (user) + John, Mary, David (admins)
